@@ -1,60 +1,78 @@
-GameVault Store
+F1 Driver Current Season Standings Website
 
-GameVault Store is a modern gaming products shopping website built using HTML, CSS, and JavaScript.
-The project displays gaming products in stylish product cards and allows users to add items to a shopping cart with quantity management and total price calculation.
+A modern Formula 1 driver statistics website built using HTML, CSS, and JavaScript.
+The application fetches real-time Formula 1 driver standings using the Jolpica F1 API and displays driver statistics in a clean and responsive interface.
 
 Features
-Modern responsive UI design
-Hero banner section
-Product cards with images and pricing
-Add to Cart functionality
-Increase / Decrease product quantity
-Remove items from cart
-Dynamic cart item counter
-Automatic total price calculation
-Smooth hover animations
-Mobile responsive layout
+Search Formula 1 drivers by surname
+Fetch live F1 driver standings from API
+Display driver position, points, wins, nationality, and constructor
+Responsive modern UI
+Dynamic search functionality
+Error handling for invalid searches
+Keyboard Enter key support
+Professional dark-themed design
 Technologies Used
 HTML5
 CSS3
-JavaScript (Vanilla JS)
+JavaScript
+Fetch API
+Jolpica F1 API
 Google Fonts
+API Used
+
+Jolpica F1 API:
+
+https://api.jolpi.ca/ergast/f1/current/driverStandings.json
+
+The API provides:
+
+Current F1 driver standings
+Driver information
+Team data
+Championship points
+Race wins
 Project Structure
-GameVault-Store/
-index.html
-README.md
+F1-Driver-Stats/
+── index.html
+── README.md
 How To Run
-Download or clone the project
+Download or clone the repository
 git clone <repository-link>
 Open the project folder
 Run index.html in any browser
 Functionalities
-Product Display
+Driver Search
 
-Products are displayed dynamically using JavaScript arrays.
+Users can search drivers using their surname.
 
-Shopping Cart
+Examples:
 
-Users can:
+verstappen
+hamilton
+leclerc
+norris
+Real-Time Data Fetching
 
-Add products
-Increase quantity
-Decrease quantity
-Remove products
-Price Calculation
+The website fetches live driver standings data from the API using JavaScript Fetch API.
 
-The total price updates automatically whenever cart items change.
+Dynamic UI Update
+
+Driver statistics are dynamically inserted into the webpage after a successful API response.
 
 Future Improvements
-Search functionality
-Product filtering
-Dark/Light mode toggle
-Checkout page
-User authentication
-Local storage support
-Payment gateway integration
+Driver profile images
+Team logos
+Race schedule section
+Constructor standings
+Driver comparison feature
+Search suggestions
+Season selector
+Loading animations
 Author
 
 Developed by Pavan.
 
-This project is open-source and free to use for educational purposes.
+License
+
+This project is open-source and intended for educational purposes.
